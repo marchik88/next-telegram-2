@@ -18,7 +18,7 @@ const Signin = ({
     <div>
       <div>
         <input name="csrfToken" type="hidden" defaultValue={csrfToken}/>
-        {Object.values(providers || {}).map((provider) => {
+        {Object.values(providers || {})?.map((provider) => {
           return (
             <div key={provider.name}>
               {provider.id === 'telegram-login' ? (
